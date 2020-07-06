@@ -1,2 +1,2 @@
 ﻿# Hotel Management
-Simple Hotel Management Software (University Project)
+Hotel Management Software using WPF (University Project)
