@@ -1,0 +1,25 @@
+﻿<Window x:Class="GestaoHoteleira.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GestaoHoteleira"
+        mc:Ignorable="d"
+        Title="Gestão de Hotel" Height="400" Width="600" Background="#FF1F445D" WindowStartupLocation="CenterScreen" WindowStyle="None" ResizeMode="NoResize">
+
+    <Grid>
+        <Grid HorizontalAlignment="Left" Height="20" VerticalAlignment="Top" Width="600" MouseLeftButtonDown="MouseEvent_DragWindow" Background="#FFF1F1F1">
+            <Image Height="16" Margin="576,2,4,0" VerticalAlignment="Top" Source="icons/fechar-16.png" MouseLeftButtonDown="MouseEvent_CloseWindow" RenderTransformOrigin="0.6,0.5"/>
+            <Image HorizontalAlignment="Left" Height="16" Margin="555,2,0,0" VerticalAlignment="Top" Width="16" Source="icons/minimize-16.png" MouseLeftButtonDown="MouseEvent_MinimizeWindow" RenderTransformOrigin="10.5,-0.5"/>
+        </Grid>
+
+        <Label Content="LOGIN" FontSize="32" HorizontalAlignment="Left" Margin="246,63,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Century Gothic"/>
+        <TextBox Text="Username" HorizontalAlignment="Left" Padding="30, 8" Name="inputLoginUsername" Height="35" Margin="160,156,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="280" BorderThickness="0,0,0,2" BorderBrush="{x:Null}" SelectionBrush="#FFACACAC" Foreground="#FF363636" FontSize="14" FontFamily="Century Gothic"/>
+        <PasswordBox HorizontalAlignment="Left" Name="inputLoginPassword" Padding="30, 8" Margin="160,215,0,0" VerticalAlignment="Top" Width="280" Height="35" BorderThickness="0,0,0,2" BorderBrush="{x:Null}" SelectionBrush="#FFACACAC" FontSize="14" FontFamily="Century Gothic" Password="Password" Foreground="#FF363636"/>
+
+        <Button Content="Login" HorizontalAlignment="Left" Margin="160,285,0,0" VerticalAlignment="Top" Width="280" Height="35" Click="Button_Click" BorderBrush="{x:Null}" Background="White" FontFamily="Century Gothic" FontSize="14" FontWeight="Bold" Foreground="#FF2C2C2C"/>
+
+        <TextBlock HorizontalAlignment="Left" Margin="10,375,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="15" FontFamily="Century Gothic" Foreground="White"><Run Text="© Rui Pinheiro |"/><Run Text=" 8170285"/><Run Text=" "/><Run Text="| "/><Run Text="ESTG  IPP LSIG "/><LineBreak/><Run/><LineBreak/><Run Text=""/></TextBlock>
+
+    </Grid>
+</Window>
